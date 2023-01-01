@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder App | Admin</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="dashboard-main-container">
+        <!-- Side Panel Bar  -->
+        <div class="dashboard-side-bar">
+            <div class="logo">
+                <a href="/">
+                    <h1>RApp</h1>
+                </a>
+            </div>
+            <!-- Navigations  -->
+            <div class="dashboard-side-links">
+                <img src="./imgs/dashboard_icon.svg" alt="home" />
+                <a href="/">Dashboard</a>
+            </div>
+            <div class="dashboard-side-links">
+                <img src="./imgs/alert_icon.svg" alt="Event" />
+                <a href="./event.html">User Events</a>
+            </div>
+            <!-- end Navigations  -->
+        </div>
+        <!-- End Side Panel Bar  -->
+
+        <!-- User Management Section  -->
+        <div class="dashboard-user-management">
+            <h1>Hello, Moeed</h1>
+            <p class="dashboard-heading-text">
+                Here you can view all of your Users
+            </p>
+            <div class="dashboard-table-header">
+                <h3>Overwiew</h3>
+                <div class="dashboard-table-search-box">
+                    <img src="./imgs/Search.svg" alt="" />
+                    <input value="" placeholder="Search" />
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>John@xyz.com</td>
+                        <td>u9dno7923bsdm</td>
+                        <td><button class="action-btn edit">Edit</button><button class="action-btn del">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amenda</td>
+                        <td>Amenda@xyz.com</td>
+                        <td>u9dno7923bsdm</td>
+                        <td><button class="action-btn edit">Edit</button><button class="action-btn del">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jason</td>
+                        <td>Jason@xyz.com</td>
+                        <td>u9dno7923bsdm</td>
+                        <td><button class="action-btn edit">Edit</button><button class="action-btn del">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- End Management Section  -->
+    </div>
+</body>
+
+</html>

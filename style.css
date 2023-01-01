@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+	font-family: GTWalsheimPro;
+	src: url(./fonts/GTWalsheimPro-Regular.ttf),
+		url(./fonts/GTWalsheimPro-Regular.woff);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* body {
+	font-family: "GTWalsheimPro";
+	background-color: #f9f9f9;
+} */
+
+img {
+	width: 100%;
+}
+a {
+	text-decoration: none;
+}
+
+
+/* Admin Dashboard */
+.dashboard-main-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: #f9f9f9;
+}
+.dashboard-side-bar {
+	width: 245px;
+	background-color: #ffffff;
+	height: 100%;
+	position: fixed;
+}
+.dashboard-side-bar .logo {
+	width: 100px;
+	margin: 0 auto;
+	padding: 20px 5px;
+	margin-bottom: 10px;
+}
+.dashboard-side-bar .logo h1{
+    font-family: "GTWalsheimPro";
+    color: rgb(46, 151, 69);
+}
+.dashboard-side-links {
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.dashboard-side-links img {
+	width: 20px;
+}
+.dashboard-side-links a {
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 20px;
+	color: #696c6f;
+	font-family: "GTWalsheimPro";
+	font-size: 16px;
+}
+.dashboard-side-links:hover > a {
+	/* color: #dddddd; */
+	font-weight: bold;
+}
+.dashboard-side-links:hover {
+	background: rgb(0 154 96 / 8%);
+	transition: 0.4s;
+}
+.dashboard-side-links::after {
+	content: "";
+	height: 35px;
+	width: 3px;
+	background-color: rgb(0 154 96 / 8%);
+	position: absolute;
+	right: 0;
+	display: none;
+}
+.dashboard-side-links:hover::after {
+	display: block;
+}
+.dashboard-user-management {
+	padding: 28px 30px 15px 30px;
+	flex: 2;
+	position: relative;
+	margin-left: 245px;
+	height: 100%;
+}
+.dashboard-user-management h1 {
+	font-family: "GTWalsheimPro";
+	color: #222222;
+	font-size: 28px;
+	line-height: 30px;
+}
+.dashboard-heading-text {
+	color: #5a6576;
+	font-family: "GTWalsheimPro";
+	margin-top: 0.4rem;
+}
+.dashboard-table-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	background-color: #ffffff;
+	width: 100%;
+	padding: 0 2%;
+	margin-top: 40px;
+	border-bottom: 2px solid #ccc;
+}
+.dashboard-table-header h3 {
+	font-family: "GTWalsheimPro";
+	line-height: 0;
+	font-size: 22px;
+}
+.dashboard-table-search-box {
+	display: flex;
+	height: 40px;
+	padding-left: 10px;
+	background-color: #f9f9f9;
+	align-items: center;
+	border-radius: 8px;
+}
+.dashboard-table-search-box img {
+	width: 20px;
+}
+.dashboard-table-search-box input {
+	background-color: #f9f9f9;
+	outline: none !important;
+	border: none !important;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 16px;
+	font-family: "GTWalsheimPro";
+}
+.dashboard-table-search-box input::placeholder {
+	color: #5a6576;
+	font-family: "GTWalsheimPro";
+	font-size: 16px;
+}
+table {
+	background-color: #ffffff;
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: auto;
+}
+
+table th {
+	border-bottom: 2px solid #ccc;
+	font-size: 18px;
+	font-family: "GTWalsheimPro";
+	text-align: center;
+	color: rgb(5, 5, 5);
+	padding: 0.7rem 0;
+}
+table td {
+	font-size: 14px;
+	text-align: center;
+	color: #5a6576;
+	padding: 0.5rem 0;
+}
+table tr {
+	border-bottom: 1px solid #ccc;
+}
+.action-btn{
+	border: 0;
+	outline: 0;
+	padding: 0.3rem 1rem;
+	margin: 0 0.5rem;
+	cursor: pointer;
+	color: #f9f9f9;
+}
+.action-btn.del{
+	background-color: rgba(243, 7, 7, 0.514);
+}
+.action-btn.edit{
+	background-color: rgba(69, 126, 69, 0.863);
+}
